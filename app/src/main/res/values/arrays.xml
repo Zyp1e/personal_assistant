@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="repeat_types">
+        <item>每十五分钟</item>
+        <item>每天</item>
+        <item>每周</item>
+    </string-array>
+    <array name="filter_types">
+        <item>按种类</item>
+        <item>按约定日期</item>
+    </array>
+    <string-array name="time_ranges">
+        <item>当天</item>
+        <item>当月</item>
+        <item>当年</item>
+    </string-array>
+</resources>

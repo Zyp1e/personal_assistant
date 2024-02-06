@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_clear_memo"
+        android:title="清除记录" />
+
+    <item
+        android:id="@+id/menu_go_to_setting_memo"
+        android:title="设置" />
+
+    <group
+        android:id="@+id/menu_group_sort"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_sort_by_date"
+            android:title="按创建日期排序" />
+
+        <item
+            android:id="@+id/menu_sort_by_title"
+            android:title="按标题排序" />
+    </group>
+    <group
+        android:id="@+id/menu_group_sort_by_tags"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_sort_by_tags"
+            android:title="按标签分类" />
+    </group>
+</menu>

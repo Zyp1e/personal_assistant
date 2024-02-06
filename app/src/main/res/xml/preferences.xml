@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 备忘录设置 -->
+    <PreferenceCategory
+        android:title="备忘录设置">
+
+        <!-- 备忘录分类设置 -->
+        <EditTextPreference
+            android:key="memo_category"
+            android:title="备忘录分类"
+            android:summary="设置备忘录的默认分类"
+            android:maxLength="50"
+            android:defaultValue=""
+            android:selectAllOnFocus="true"
+            android:inputType="textCapWords"/>
+    </PreferenceCategory>
+
+    <!-- 待办事项设置 -->
+    <PreferenceCategory
+        android:title="待办事项设置">
+
+        <!-- 待办事项分类设置 -->
+        <EditTextPreference
+            android:key="todo_category"
+            android:title="待办事项分类"
+            android:summary="设置待办事项的默认分类"
+            android:maxLength="50"
+            android:defaultValue=""
+            android:selectAllOnFocus="true"
+            android:inputType="textCapWords" />
+    </PreferenceCategory>
+
+    <!-- 记账设置 -->
+    <PreferenceCategory
+        android:title="记账设置">
+
+        <!-- 记账分类设置 -->
+        <EditTextPreference
+            android:key="expense_category"
+            android:title="记账分类"
+            android:summary="设置记账的默认分类"
+            android:maxLength="50"
+            android:defaultValue=""
+            android:selectAllOnFocus="true"
+            android:inputType="textCapWords" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
