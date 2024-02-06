@@ -1,6 +1,6 @@
 # 一、课题理解与分析：
 
-![Bshu](D:/Typora/picture/20240204154558.png)
+![](personal-assistant-app/20240204154558.png)
 **所有记分点要求内容均已实现。**
 
 根据要求来看，主界面主要实现的是向各个界面的跳转功能。备忘录界面实现的记录的存储、显示以及其他查看操作。待办事项界面可以通过借鉴备忘录界面实现一些记录的存储、显示以及其他查看操作，但是多了时间和提醒的概念。记账只要结合备忘录界面和待办事项界面即可。
@@ -120,17 +120,17 @@
 
 主界面相关代码内容：
 
-![Bshu](D:/Typora/picture/wps2.jpg) 
+![ ](personal-assistant-app/wps2.jpg) 
 
 设置界面设计内容：
 
-![Bshu](D:/Typora/picture/wps3.jpg) 
+![ ](personal-assistant-app/wps3.jpg) 
 
 ### （2）实验结果
 
 实现功能清单的显示以及设置界面屏幕
 
-![Bshu](D:/Typora/picture/wps4.jpg)![Bshu](D:/Typora/picture/wps5.jpg) 
+![ ](personal-assistant-app/wps4.jpg)![ ](personal-assistant-app/wps5.jpg) 
 
 ### （3）操作步骤
 
@@ -154,15 +154,15 @@
 
 在设计备忘录界面时，我选择使用RecyclerView来展示备忘录列表，并使用Toolbar搭配Menu菜单为用户提供了按创建时间和标题排序的功能。通过在 MemoActivity.java 中实现了排序的方法，用户可以方便地选择不同的排序方式。这样，用户可以根据自己的需求，轻松查看备忘录列表。
 
-![Bshu](D:/Typora/picture/wps6.jpg) 
+![ ](personal-assistant-app/wps6.jpg) 
 
 计分点3：支持添加、删除、修改备忘。
 
 我确保用户能够方便地进行备忘录的添加、删除和修改操作。通过弹出 PopupWindow，用户可以轻松输入或编辑备忘录的标题、内容和标签。保存时，我在 saveOrUpdateMemo 方法中判断备忘录是否为空，从而进行添加或更新的操作，并及时更新备忘录列表。
 
-![Bshu](D:/Typora/picture/wps7.jpg) 
+![ ](personal-assistant-app/wps7.jpg) 
 
-![Bshu](D:/Typora/picture/wps8.jpg) 
+![ ](personal-assistant-app/wps8.jpg) 
 
 计分点4：支持分类和标签。支持按分类或标签筛选备忘。
 
@@ -170,29 +170,29 @@
 
 备忘录默认实现分类，对于具有相同标签的记录，将会相邻排列，并只显示该类的第一条记录的标签值。
 
-![Bshu](D:/Typora/picture/wps9.jpg) 
+![ ](personal-assistant-app/wps9.jpg) 
 
-![Bshu](D:/Typora/picture/wps10.jpg) 
+![ ](personal-assistant-app/wps10.jpg) 
 
-![Bshu](D:/Typora/picture/wps11.jpg)![Bshu](D:/Typora/picture/wps12.jpg) 
+![ ](personal-assistant-app/wps11.jpg)![ ](personal-assistant-app/wps12.jpg) 
 
 ### （2）实现结果：
 
 ①按下浮动按钮后，将会弹出一个窗口，用户可以在此弹出窗口输入标题、内容、标签，输入完毕后可以按下保存按钮进行保存，也可以通过按下返回按钮取消添加。
 
-![Bshu](D:/Typora/picture/wps13.jpg) 
+![ ](personal-assistant-app/wps13.jpg) 
 
 ②在已有的备忘录记录当中，用户可以点击其中一条记录，来对该记录进行修改或者删除该记录。
 
-![Bshu](D:/Typora/picture/wps14.jpg) 
+![ ](personal-assistant-app/wps14.jpg) 
 
 ③用户也可以通过按下筛选按钮，根据标签内容进行筛选，也可以通过按下清除筛选部分来取消筛选
 
-![Bshu](D:/Typora/picture/wps15.jpg) 
+![ ](personal-assistant-app/wps15.jpg) 
 
 ④用户可以在menu栏实现跳转设置界面、清空备忘录、排序等操作。
 
-![Bshu](D:/Typora/picture/wps16.jpg) 
+![ ](personal-assistant-app/wps16.jpg) 
 
 ⑤退出应用重新打开后，之前的备忘录记录依旧能够保留。
 
@@ -240,17 +240,17 @@
 
 对于按日期筛选，根据选择的日期，设置起始时间戳为该日期00：00：00，截止日期为第二天的00：00：00，筛选时间戳在此范围内的记录
 
-![Bshu](D:/Typora/picture/wps17.jpg) 
+![ ](personal-assistant-app/wps17.jpg) 
 
-![Bshu](D:/Typora/picture/wps18.jpg)![Bshu](D:/Typora/picture/wps19.jpg) 
+![ ](personal-assistant-app/wps18.jpg)![ ](personal-assistant-app/wps19.jpg) 
 
 计分点6：添加、删除、修改待办事项。
 
 此处与备忘录的增删改部分相近，但是待办事项界面设计日期与时间，所以增加了TimePicker与datePickerDialog来输入时间与日期
 
-![Bshu](D:/Typora/picture/wps20.jpg) 
+![ ](personal-assistant-app/wps20.jpg) 
 
-![Bshu](D:/Typora/picture/wps21.jpg) 
+![ ](personal-assistant-app/wps21.jpg) 
 
 计分点7：支持提醒功能。提醒分单次和重复两种类型。
 
@@ -258,31 +258,31 @@
 
 由于使用重复提醒的函数为setInexactRepeating函数，所以重复提醒的第一次提醒时间会存在一定的延迟
 
-![Bshu](D:/Typora/picture/wps22.jpg) 
+![ ](personal-assistant-app/wps22.jpg) 
 
-![Bshu](D:/Typora/picture/wps23.jpg) 
+![ ](personal-assistant-app/wps23.jpg) 
 
 ### （2）实验结果
 
 ①界面整体布局，菜单内容
 
-![Bshu](D:/Typora/picture/wps24.jpg)![Bshu](D:/Typora/picture/wps25.jpg) 
+![ ](personal-assistant-app/wps24.jpg)![ ](personal-assistant-app/wps25.jpg) 
 
 ②筛选实现部分
 
-![Bshu](D:/Typora/picture/wps26.jpg)![Bshu](D:/Typora/picture/wps27.jpg) 
+![ ](personal-assistant-app/wps26.jpg)![ ](personal-assistant-app/wps27.jpg) 
 
-![Bshu](D:/Typora/picture/wps28.jpg)![Bshu](D:/Typora/picture/wps29.jpg)（选择12.25筛选后）
+![ ](personal-assistant-app/wps28.jpg)![ ](personal-assistant-app/wps29.jpg)（选择12.25筛选后）
 
 ③实现增删改部分，popup窗口内容，可以按下选择日期按钮显示日历，可以按下左下角的小键盘将钟表切换成直接输入时间。重复时间通过spinner来选择
 
-![Bshu](D:/Typora/picture/wps30.jpg)![Bshu](D:/Typora/picture/wps31.jpg)![Bshu](D:/Typora/picture/wps32.jpg) 
+![ ](personal-assistant-app/wps30.jpg)![ ](personal-assistant-app/wps31.jpg)![ ](personal-assistant-app/wps32.jpg) 
 
-![Bshu](D:/Typora/picture/wps33.jpg) 
+![ ](personal-assistant-app/wps33.jpg) 
 
 ④提醒部分，显然可以上方有通知提醒，下方有toast显示，重复提醒第一次的提醒时间可能要延迟3-5min
 
-![Bshu](D:/Typora/picture/wps34.jpg) 
+![ ](personal-assistant-app/wps34.jpg) 
 
 ### （3）操作步骤
 
@@ -334,29 +334,29 @@
 
 Timerange为所选的当天/当月/当年，按下筛选按钮后，系统可以切换至对应的日期，查询该日期当天/当月/当年的相关信息。
 
-![Bshu](D:/Typora/picture/wps35.jpg) 
+![ ](personal-assistant-app/wps35.jpg) 
 
-![Bshu](D:/Typora/picture/wps36.jpg) 
+![ ](personal-assistant-app/wps36.jpg) 
 
 计分点9：添加、删除、修改支出项。
 
 此处基本与备忘录界面的设计相同，多一个存储当前账单记录的记录日期的变量
 
-![Bshu](D:/Typora/picture/wps37.jpg) 
+![ ](personal-assistant-app/wps37.jpg) 
 
 ### （2）实验结果
 
 ①实现记账主界面的设计，当天/当月/当年的选择
 
-![Bshu](D:/Typora/picture/wps38.jpg)![Bshu](D:/Typora/picture/wps39.jpg) 
+![ ](personal-assistant-app/wps38.jpg)![ ](personal-assistant-app/wps39.jpg) 
 
 ②实现筛选进行切换至其他日期
 
-![Bshu](D:/Typora/picture/wps40.jpg)![Bshu](D:/Typora/picture/wps41.jpg) 
+![ ](personal-assistant-app/wps40.jpg)![ ](personal-assistant-app/wps41.jpg) 
 
 ③实现增删改的popup界面，如果输入不完整会显示相关toast内容
 
-	![Bshu](personal-assistant-app/wps42.jpg)![Bshu](personal-assistant-app/wps43.jpg)
+	![ ](personal-assistant-app/wps42.jpg)![ ](personal-assistant-app/wps43.jpg)
 
 ### （3）操作步骤
 
